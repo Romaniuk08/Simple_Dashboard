@@ -1,0 +1,105 @@
+.content {
+    @extend %flex-column;
+    max-width: 1048px;
+    width: 100%;
+}
+
+.content-wrap {
+    background-color: $fiolet-light;
+    border-radius: 39px;
+
+}
+
+// header
+.header,
+.header__wallet,
+.header__logo,
+.footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding: 13px;
+    justify-content: space-between;
+    width: 100%;
+
+
+    &__logo {
+        gap: 40px;
+    }
+
+    &__price-number {
+        @include font (800, 60px, 73px, #390646)
+    }
+
+    &__price-txt {
+        @include font (800, 20px, 24px, #fff);
+        text-align: center;
+    }
+
+    .header__wallet {
+        &__txt {
+            @include font (800, 50px, 50px, #390646)
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .header__price-number {
+            font-size: 45px;
+        }
+
+        .header__wallet__txt {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+        .header__price-number {
+            font-size: 38px;
+        }
+
+        .header__wallet__txt {
+            font-size: 35px;
+        }
+    }
+
+}
+
+// main
+.main {
+    margin: 30px 0;
+    padding: 30px 55px 60px 64px;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+// footer
+.footer {
+    gap: 30px;
+    justify-content: space-between;
+
+    &__logo {
+        max-width: 370px;
+        padding: 15px 75px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__grafic {
+        max-width: 630px;
+        padding: 35px 90px;
+    }
+
+    &__img-circle {
+        border: 20px solid $fiolet;
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+}

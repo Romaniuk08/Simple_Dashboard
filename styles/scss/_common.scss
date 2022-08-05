@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+// background color
+$fiolet-light: #D4ADD9;
+$fiolet: #AE34CD;
+
+// mixin
+@mixin font($weight, $size, $line-height, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+}
+
+// container
+$container-width: 1417px;
+$container-space: 25px;
+
+.container {
+    max-width: calc($container-width + $container-space * 2);
+    width: 100%;
+    padding: 0 $container-space;
+    margin: 0 auto;
+    gap: 13px;
+    display: flex;
+}
+
+// display flex column
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}

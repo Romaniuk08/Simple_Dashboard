@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1467px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+  gap: 13px;
+  display: flex;
+}
+
+.content, .aside,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside {
+  background-color: #AE34CD;
+  max-width: 356px;
+  width: 100%;
+  border-radius: 39px;
+  padding: 50px 0;
+  gap: 13px;
+}
+.aside__button {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  padding: 0 40px;
+  position: relative;
+}
+.aside__img-sun {
+  position: absolute;
+  top: -25px px;
+  left: 15px;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+  padding: 10px 40px;
+}
+.nav__link:last-child {
+  margin-bottom: 0;
+}
+.nav__link__active {
+  background-color: #D4ADD9;
+  border-radius: 0px 80px 80px 0px;
+}
+.nav__txt {
+  padding: 0 15px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+}
+
+.content {
+  max-width: 1048px;
+  width: 100%;
+}
+
+.content-wrap {
+  background-color: #D4ADD9;
+  border-radius: 39px;
+}
+
+.header,
+.header__wallet,
+.header__logo,
+.footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  padding: 13px;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__logo {
+  gap: 40px;
+}
+.header__price-number {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  color: #390646;
+}
+.header__price-txt {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+}
+.header .header__wallet__txt {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #390646;
+}
+@media screen and (max-width: 1024px) {
+  .header .header__price-number {
+    font-size: 45px;
+  }
+  .header .header__wallet__txt {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .header .header__price-number {
+    font-size: 38px;
+  }
+  .header .header__wallet__txt {
+    font-size: 35px;
+  }
+}
+
+.main {
+  margin: 30px 0;
+  padding: 30px 55px 60px 64px;
+}
+.main__img {
+  width: 100%;
+}
+
+.footer {
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer__logo {
+  max-width: 370px;
+  padding: 15px 75px;
+}
+.footer__img {
+  width: 100%;
+}
+.footer__grafic {
+  max-width: 630px;
+  padding: 35px 90px;
+}
+.footer__img-circle {
+  border: 20px solid #AE34CD;
+  padding: 8px;
+  border-radius: 50%;
+}
